@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}contact{% endblock %}
+{% block content %}
+<html><head>
+    <meta charset="utf-8">
+    <title>RegistrationForm_v7 by Colorlib</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="robots" content="noindex, follow">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" nonce="7360f823-083f-407d-8561-fc4aa4cbf244"></script><script defer="" referrerpolicy="origin" src="/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyUmVnaXN0cmF0aW9uRm9ybV92NyUyMGJ5JTIwQ29sb3JsaWIlMjIlMkMlMjJ4JTIyJTNBMC4zNzYwNjIzNjk4MjE3NDYlMkMlMjJ3JTIyJTNBMTUzNiUyQyUyMmglMjIlM0E4NjQlMkMlMjJqJTIyJTNBNzQ2JTJDJTIyZSUyMiUzQTE1MzYlMkMlMjJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZjb2xvcmxpYi5jb20lMkZldGMlMkZyZWdmb3JtJTJGY29sb3JsaWItcmVnZm9ybS0yMyUyRiUyMiUyQyUyMnIlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmNvbG9ybGliLmNvbSUyRndwJTJGdGVtcGxhdGUlMkZjb2xvcmxpYi1yZWdmb3JtLTIzJTJGJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQS0zMzAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE"></script><script nonce="7360f823-083f-407d-8561-fc4aa4cbf244">(function(w,d){!function(a,e,t,r){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zaraz={deferred:[]},a.zaraz.q=[],a.zaraz._f=function(e){return function(){var t=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:t})}};for(const e of["track","set","ecommerce","debug"])a.zaraz[e]=a.zaraz._f(e);a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r),n=e.getElementsByTagName("title")[0];for(n&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.x=Math.random(),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.zarazData.q=[];a.zaraz.q.length;){const e=a.zaraz.q.shift();a.zarazData.q.push(e)}z.defer=!0;for(const e of[localStorage,sessionStorage])Object.keys(e).filter((a=>a.startsWith("_zaraz_"))).forEach((t=>{try{a.zarazData["z_"+t.slice(7)]=JSON.parse(e.getItem(t))}catch{a.zarazData["z_"+t.slice(7)]=e.getItem(t)}}));z.referrerPolicy="origin",z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head>
+    <body>
+    <div class="wrapper">
+    <div class="inner" style="margin-left: 100px;margin-top: 50px;">
+    <form action="" method="post">{% csrf_token %}
+    <h3>Contact Us</h3><br><br>
+    <div style="margin-left: 50px;">
+    <label class="form-group">
+    <span>Your Name</span>
+    <span class="border"></span>
+    <input type="text" name="fullname" class="form-control" required="">
+    </label><br><br>
+    <label class="form-group">
+    <span for="">Your Mail</span>
+    <span class="border"></span>
+    <input type="text" name="mail" class="form-control" required="">
+    </label><br><br>
+    <label class="form-group">
+    <span for="">Your Message</span>
+    <span class="border"></span>
+    <textarea name="mesg" id="" class="form-control" required=""></textarea>
+    </label><br><br>
+    <button style="margin-left: 50px;">Submit
+    <i class="zmdi zmdi-arrow-right"></i>
+    </button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </body> 
+</html> 
+{% endblock  %}
+
